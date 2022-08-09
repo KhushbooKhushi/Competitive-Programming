@@ -1,3 +1,27 @@
+Given a non-empty sequence of characters str, return true if sequence is Binary, else return false
+
+Example 1:
+
+Input:
+str = 101
+Output:
+1
+Explanation:
+Since string contains only 0 and 1, output is 1.
+
+Algorithm
+
+STEP 1: Get the lenght of string using .lenght() function and store it into variable n.
+STEP 2: Create an array of characters of size n+1. 
+        char char_array[n + 1];
+STEP 3: Copy the characters of given string (named str) into the character array using the function strcpy.
+        strcpy(char_array, str.c_str());
+STEP 4: Using a for loop check each and every elements of array if it is not equal to '1' and '0'. 
+        If this is the case return FALSE.
+STEP 5: Return TRUE.
+
+
+
 //{ Driver Code Starts
 // C++ program to Print root to leaf path WITHOUT
 // using recursion
@@ -27,8 +51,6 @@ int main()
 bool isBinary(string str)
 {
    // Your code here
-   //string s = "geeksforgeeks";
- 
     int n = str.length();
  
     // declaring character array
