@@ -1,4 +1,5 @@
-Even Odd Sum
+#Even Odd Sum
+
 Given an array Arr[] of N integers.
 Find the sum of values of even and odd index positions separately.
 
@@ -10,12 +11,34 @@ Arr={1,2,3,4,5}
 Output:
 9 6
 Explanation:
-The sum of elements at odd places i.e
-at 1st,3rd and 5th places are (1+3+5=9)
-Similarly,the sum of elements at even 
-places i.e. at 2nd and 4th places are
-(2+4=6).
+The sum of elements at odd places i.eat 1st,3rd and 5th places are (1+3+5=9)
+Similarly,the sum of elements at even places i.e. at 2nd and 4th places are (2+4=6).
 
+Solution Explanation
+
+We need to find the sum of values whose places are even and odd seperately.
+
+Arr={1,5,7,9,2} = {1st, 2nd, 3rd, 4th, 5th}
+
+Here, 1st, 3rd and 5th are odd places
+      2nd and 4th are even places.
+      
+Index 0 is in 1st place which means it will be added to oddsum.
+Index 1 is in 2nd place which means it will be added to evensum.
+Index 2 is in 3rd place which means it will be added to oddsum.
+....
+etc.
+
+So, we can know the index is in odd place or in even place by using this simple calculation
+
+if(Index%2 == 0)
+  //Odd place
+else
+  //even place
+  
+Index starts from 0 but place value start from 1.
+So, 0 index is divisble by 2 which is 1st place actually so it means it will be added to oddsum.
+    1 index is not divisible by 2 which is 2nd place actually so it means it will be added to evensum.
 
 //{ Driver Code Starts
 #include <bits/stdc++.h>
