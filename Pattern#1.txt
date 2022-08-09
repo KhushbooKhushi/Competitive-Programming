@@ -1,0 +1,24 @@
+You a given a number N. You need to print the pattern for the given value of N.
+
+For N = 2 the pattern will be 
+2 2 1 1
+2 1
+
+
+
+void printPat(int n)
+{
+    int count=n;
+    //int n1 =n;
+//Your code here
+  while(count>0){
+  for(int i=n;i>0;i--){
+      for(int j=0;j<count;j++){
+          cout<<i<<" ";
+      }
+     
+  }
+   cout<<"$";
+   count--;
+ }
+}
